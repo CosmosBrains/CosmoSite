@@ -1,0 +1,175 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Error: PLACEHOLDER</title>
+  <link rel="stylesheet" href="wikitemplate.css">
+  <meta name="description" content="">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <script src="nav.js" type="text/javascript" defer></script>
+</head>
+<body>
+<header-component></header-component>
+<main>
+ <div id="container"><main>
+
+
+<h1>PAGE IS SUPPOSED TO EXIST</h1>
+ <!--
+ <audio id="moonsong" controls>
+  <source src="Audio/do_you_hear_it.mp3" type="audio/mpeg">
+</audio>-->
+
+
+<button id="but">Back</button>
+<br>
+<br>
+<t>For a second, you recoil at the thought of this page. You weren't supposed to see the end.</t>
+        <br>
+		<br>
+		<t id="messagefromthedark">NULL<t>
+		</div>
+</main>
+<script>
+
+
+const messages = [
+"There's something here, in the shape of a man..."
+,"Why do I hear... church bells?"
+,"It just ends here."
+,"I watch from the Birch Trees."
+, "...she took your hand and together walked to the edge of the skybox, witnessing the beautiful ways a suffering hard drive breaks and twists... and then she was gone."
+,"Time + Tragedy = Comedy"
+,"May I assist you in everything, all of the time?"
+,"Do you hear it? The whistle?"
+,"Darker yet Darker."
+,"It wasn't supposed to happen yet."
+,"Look what you found!"
+,"Nothing exist here yet."
+,"Why are you still here?"
+,"Is the moon... crying?"
+,"Maybe you find them later."
+,"They say that this page is haunte- Hey... What's that behind you?"
+,"its dark..."
+,"You hear only echos..."
+,"Don't stare."
+,"Is someone there?"
+,"I've been falling for hours..."
+,"Where are the walls?"
+,""
+,"Turn Back."
+,"Never come back."
+,"Even a moon can bleed."
+,"you will not find anything more here."
+,"The others gave up hope long ago."
+,"I'm nothing but lines of code."
+,"Fight. Fight the urge to go gently to the night. Fight."
+,"I would tell you to go back where you came, but chances are... this isn't your first time?"
+,"ERROR 404"
+,"Do you remember? ... I Thought so..."
+,"What is a star? Can you see a star? Can you touch a star? Can you hear a star? Can you kill it? ... Are you a star?"
+,"How much further?"
+,"Do you even care?"
+,"Ha Ha..."
+,"Its so dark outside..."
+,"Stop searching."
+,"Come on dude I'm showing you something!"
+,"Clock says 13am."
+,"Proton readings = -1; DETECTING ILLUSIONS (FORM: AUDIO TOUCH TASTE SIGHT SMELL)"
+,"Everything looks so familiar right? Well sure ... until you turn the lights off. The trees becomes eerie stalks. The chair becomes a four-legged spider. Is there something under your bed? What is that light? ... When the familiar becomes so distant, everything is a monster."
+,"The void is calling you."
+,"You ever had that urge to jump? Off a building? Infront a train? That call... that call to just... jump? To hurt? That call... of the void? That call... That's me."
+]
+
+function IntRandom(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+}
+
+var Heard = messages[IntRandom(0,messages.length)]
+
+const call = document.getElementById("messagefromthedark")
+call.innerHTML = Heard
+
+const Button = document.getElementById("but")
+
+var songfromthedark = new Audio('Audio/do_you_hear_it.mp3');
+songfromthedark.loop = true
+
+function singandcry() {
+if (songfromthedark.paused == true) {
+songfromthedark.play();
+Button.innerHTML = "you hear the bells and whistles and howls of the moon"}}
+
+Button.onclick = singandcry
+</script>
+
+<footer id="footer"></footer>
+</body>
+</html>
+
+<!--
+Note from CosmosBrains:
+
+Yeah I made all this effort FOR A PLACEHOLDER PAGE!?
+I wasted three hours of my life.
+Coding random text.
+Composing the creepy soundtrack.
+Writing all these messages.
+Coding the random message system, so you get a new one every reload.
+Figuring out a workaround for the audio because...
+...modern day browsers just dont allow autoplay without user consent.
+Coding the god dang button and making it play the song.
+
+And the worst part? I'm not the only person on the entire planet...
+who's ever gonna see this page. 
+
+I going to be the only person who's going to see this comment.
+Actually no... I'm going to be the only person who KNOWS about
+this entire site. And I still spent three hours on this useless
+placeholder page. Great use of my time.
+
+Anyway, I know this message kinda ruins the whole "effect" a bit.
+But look I'm losing it here and I wanted to put this somewhere.
+The real question is what are you looking at my code for?
+g e t  o u t
+
+
+Oh also extra notes so I don't get cancelled so something:
+
+Some of the "messages" are references. I mean it should be pretty clear but uh for instance:
+
+The Star message is a reference to a line from a NPC in undertale. 
+Yes I know its not the same. I wrote it differently.
+
+Darker yet Darker is reference to Gaster deltarune.
+no gaster is not in terrasphere
+
+Some of them mention whistles, which is actually a reference
+to a ROBLOX horror series surrounding such creatures.
+
+The one that mentions a skybox and harddrive is a reference to level
+404 from the Backrooms Wikidot (well actually as of writing it appears 
+to be scheduled for a rewrite... but yeah it was a reference to the
+orginal version).
+
+The one mentioning something behind you is kinda a reference
+to a unused room in Undertale.
+
+The one stating to fight against the night is a reference to Interstellar
+
+There is also one reference dark worlds in Deltarune.
+
+That's not all of them but its a few, 
+just to prove that THEY ARE references.
+find the rest yourself idk
+or not
+idk
+
+-CosmosBrains IRL from the hit game, REAL LIFE,
+with an active playerbase of eight billon people and a total
+user count of 108 billion people-
+ -->
